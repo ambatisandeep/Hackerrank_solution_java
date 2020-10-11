@@ -30,6 +30,31 @@ static String newMethod(int arr[]) {
         return "NO";
     }
     
+    
+    /******** Using Formula 2x=sum-y*******
+        
+        static String balancedSums(List<Integer> arr) {
+
+        int sum=0;
+        int x=0;
+
+        for(int i:arr){
+            sum+=i;
+        }
+
+        for(int y:arr){
+            if(2*x==sum-y){
+                return "YES";
+            }
+            x+=y;
+        }
+
+            return "NO";
+    }
+    
+    
+    *************************************/
+    
 
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
